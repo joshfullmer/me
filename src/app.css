@@ -2,3 +2,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+      font-family: 'Fira Code';
+      src: local('Fira Code'),
+        url('/static/fonts/FiraCode/ttf/FiraCode-Light.tff') format('tff'),
+        url('/static/fonts/FiraCode/woff/FiraCode-Light.woff') format('woff'),
+        url('/static/fonts/FiraCode/woff2/FiraCode-Light.woff2') format('woff2');
+      font-weight: 300;
+  }
+
+  @font-face {
+      font-family: 'Fira Code';
+      src: local('Fira Code'),
+        url('/static/fonts/FiraCode/ttf/FiraCode-Regular.tff') format('tff'),
+        url('/static/fonts/FiraCode/woff/FiraCode-Regular.woff') format('woff'),
+        url('/static/fonts/FiraCode/woff2/FiraCode-Regular.woff2') format('woff2');
+      font-weight: 400;
+  }
+
+  @font-face {
+      font-family: 'Fira Code';
+      src: local('Fira Code'),
+        url('/static/fonts/FiraCode/ttf/FiraCode-Medium.tff') format('tff'),
+        url('/static/fonts/FiraCode/woff/FiraCode-Medium.woff') format('woff'),
+        url('/static/fonts/FiraCode/woff2/FiraCode-Medium.woff2') format('woff2');
+      font-weight: 500;
+  }
+
+  @font-face {
+      font-family: 'Fira Code';
+      src: local('Fira Code'),
+        url('/static/fonts/FiraCode/ttf/FiraCode-SemiBold.tff') format('tff'),
+        url('/static/fonts/FiraCode/woff/FiraCode-SemiBold.woff') format('woff'),
+        url('/static/fonts/FiraCode/woff2/FiraCode-SemiBold.woff2') format('woff2');
+      font-weight: 600;
+  }
+
+  @font-face {
+      font-family: 'Fira Code';
+      src: local('Fira Code'),
+        url('/static/fonts/FiraCode/ttf/FiraCode-Bold.tff') format('tff'),
+        url('/static/fonts/FiraCode/woff/FiraCode-Bold.woff') format('woff'),
+        url('/static/fonts/FiraCode/woff2/FiraCode-Bold.woff2') format('woff2');
+      font-weight: 700;
+  }
+}

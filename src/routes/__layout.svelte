@@ -1,5 +1,15 @@
 <script>
-  import '../app.css';
+import Header from '$lib/components/Header.svelte';
+
+import '../app.css';
 </script>
 
-<slot />
+<svelte:head>
+  <title>josh|FULLMER</title>
+</svelte:head>
+
+<Header />
+
+<main class="flex">
+  <slot />
+</main>
