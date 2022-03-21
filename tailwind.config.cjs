@@ -4,7 +4,7 @@ const config = {
   theme: {
     extend: {
       fontFamily: {
-        'mono': ['Fira Code', 'monospace']
+        mono: ['Fira Code', 'monospace']
       }
     }
   },

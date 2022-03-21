@@ -1,5 +1,5 @@
 <script lang="ts">
-import NavLink from "./NavLink.svelte";
+  import NavLink from './NavLink.svelte';
 </script>
 
 <nav class="flex gap-4">
@@ -24,7 +24,7 @@ import NavLink from "./NavLink.svelte";
     <span class={activeArrayClass}>[]</span>
   </NavLink>
 
-  <NavLink href="/contact" let:active>
+  <NavLink href="mailto:joshfullmer9@gmail.com" let:active>
     {@const activeThisClass = active ? '' : 'text-red-500'}
     <em class={activeThisClass}>this</em>
 

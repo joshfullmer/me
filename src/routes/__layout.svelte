@@ -1,7 +1,7 @@
 <script>
-import Header from '$lib/components/Header.svelte';
+  import Header from '$lib/components/Header.svelte';
 
-import '../app.css';
+  import '../app.css';
 </script>
 
 <svelte:head>
@@ -10,6 +10,6 @@ import '../app.css';
 
 <Header />
 
-<main class="flex">
+<main class="flex h-full">
   <slot />
 </main>
