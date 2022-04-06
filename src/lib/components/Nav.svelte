@@ -24,7 +24,7 @@
     <span class={activeArrayClass}>[]</span>
   </NavLink>
 
-  <NavLink href="mailto:joshfullmer9@gmail.com" let:active>
+  <NavLink href="mailto:joshfullmer9@gmail.com" external let:active>
     {@const activeThisClass = active ? '' : 'text-red-500'}
     <em class={activeThisClass}>this</em>
 
