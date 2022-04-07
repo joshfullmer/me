@@ -1,6 +1,7 @@
 <script lang="ts">
   import { page } from '$app/stores';
   export let href = '';
+  export let title = '';
 
   function isActive(href: string, path: string): boolean {
     if (href === '/') return path === '/';
@@ -19,6 +20,7 @@
 
 <a
   {href}
+  {title}
   {target}
   class="flex {activeClass} transition-[text-decoration-color] duration-500 decoration-transparent hover:underline hover:underline-offset-4"
 >

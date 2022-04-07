@@ -3,12 +3,12 @@
 </script>
 
 <nav class="flex gap-4">
-  <NavLink href="/" let:active>
+  <NavLink href="/" title="Home" let:active>
     {@const activeClass = active ? '' : 'text-red-500'}
     <em class={activeClass}>this</em>
   </NavLink>
 
-  <NavLink href="/jobs" let:active>
+  <NavLink href="/jobs" title="Job experience" let:active>
     {@const activeObjectClass = active ? '' : 'text-yellow-400'}
     <span class={activeObjectClass}>Job</span>
 
@@ -16,7 +16,7 @@
     <span class={activeArrayClass}>[]</span>
   </NavLink>
 
-  <NavLink href="/apps" let:active>
+  <NavLink href="/apps" title="Sample apps" let:active>
     {@const activeObjectClass = active ? '' : 'text-yellow-400'}
     <span class={activeObjectClass}>App</span>
 
@@ -24,7 +24,7 @@
     <span class={activeArrayClass}>[]</span>
   </NavLink>
 
-  <NavLink href="mailto:joshfullmer9@gmail.com" external let:active>
+  <NavLink href="mailto:joshfullmer9@gmail.com" title="Contact me" external let:active>
     {@const activeThisClass = active ? '' : 'text-red-500'}
     <em class={activeThisClass}>this</em>
 
