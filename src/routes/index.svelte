@@ -80,7 +80,11 @@
       <Space />
       <span class="text-gray-700">1</span>
       <Space count={2} />
-      <button class="text-gray-400" on:click={() => (isConstCollapsed = !isConstCollapsed)}>
+      <button
+        class="text-gray-400"
+        aria-label={isConstCollapsed ? 'Expand' : 'Collapse'}
+        on:click={() => (isConstCollapsed = !isConstCollapsed)}
+      >
         {#if isHovered}
           {isConstCollapsed ? '›' : '⌄'}
         {:else}
@@ -188,7 +192,11 @@
         <Space />
         <span class="text-gray-700">3</span>
         <Space count={2} />
-        <button class="text-gray-400" on:click={() => (isSkillsCollapsed = !isSkillsCollapsed)}>
+        <button
+          class="text-gray-400"
+          aria-label={isConstCollapsed ? 'Expand' : 'Collapse'}
+          on:click={() => (isSkillsCollapsed = !isSkillsCollapsed)}
+        >
           {#if isHovered}
             {isSkillsCollapsed ? '›' : '⌄'}
           {:else}
