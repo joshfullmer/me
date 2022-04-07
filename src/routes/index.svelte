@@ -1,9 +1,9 @@
 <script lang="ts">
   import GithubLink from '$lib/components/GithubLink.svelte';
   import LinkedInLink from '$lib/components/LinkedInLink.svelte';
-  import Space from '$lib/components/Space.svelte';
-  import Tab from '$lib/components/Tab.svelte';
-  import Tooltip from '$lib/components/Tooltip.svelte';
+  import Space from '$lib/components/code/Space.svelte';
+  import Tab from '$lib/components/code/Tab.svelte';
+  import Tooltip from '$lib/components/shared/Tooltip.svelte';
   import TwitterLink from '$lib/components/TwitterLink.svelte';
 
   type Skill = {

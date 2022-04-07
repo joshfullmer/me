@@ -1,5 +1,5 @@
 <script lang="ts">
-  import NavLink from './NavLink.svelte';
+  import NavLink from '$lib/components/nav/NavLink.svelte';
 </script>
 
 <nav class="flex gap-4">
