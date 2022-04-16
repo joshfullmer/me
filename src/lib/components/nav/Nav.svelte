@@ -16,6 +16,14 @@
     <span class={activeArrayClass}>[]</span>
   </NavLink>
 
+  <NavLink href="/skills" title="Skills" let:active>
+    {@const activeObjectClass = active ? '' : 'text-yellow-400'}
+    <span class={activeObjectClass}>Skill</span>
+
+    {@const activeArrayClass = active ? '' : 'text-lime-400'}
+    <span class={activeArrayClass}>[]</span>
+  </NavLink>
+
   <NavLink href="/apps" title="Sample apps" let:active>
     {@const activeObjectClass = active ? '' : 'text-yellow-400'}
     <span class={activeObjectClass}>App</span>

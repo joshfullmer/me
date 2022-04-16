@@ -20,20 +20,16 @@
     skills: Skill[];
   };
 
-  /** Test */
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const joshFullmer: Developer = {
     description: 'User-focused frontend developer',
-    skills: [{ name: 'Vue', years: 3 }]
+    skills: [
+      { name: 'HTML/CSS', years: 4 },
+      { name: 'Javascript', years: 4 },
+      { name: 'Vue', years: 3 },
+      { name: 'Typescript', years: 3 },
+      { name: 'GraphQL', years: 3 }
+    ]
   };
-
-  const skills: Skill[] = [
-    { name: 'HTML/CSS', years: 4 },
-    { name: 'Javascript', years: 4 },
-    { name: 'Vue', years: 3 },
-    { name: 'Typescript', years: 3 },
-    { name: 'GraphQL', years: 3 }
-  ];
 
   let showEnglishDescription = false;
   let isConstCollapsed = false;
@@ -48,13 +44,13 @@
 {/if}
 
 <div
-  class="flex flex-col h-full text-3xl leading-loose mx-10 mt-20"
+  class="flex flex-col h-full mx-[10%] my-8 text-xl leading-loose md:text-2xl lg:text-3xl md:leading-loose lg:leading-loose whitespace-nowrap"
   on:mouseover={() => (isHovered = true)}
   on:focus={() => (isHovered = true)}
   on:mouseleave={() => (isHovered = false)}
   on:blur={() => (isHovered = false)}
 >
-  <div class="flex">
+  <div class="flex items-start">
     <Space />
     <button
       class="ring-2 ring-sky-800 rounded hover:bg-gray-700 active:bg-gray-900"
@@ -64,19 +60,60 @@
     <Space />
     <span class="text-gray-700"
       >/** {showEnglishDescription
-        ? 'Go back to code version'
+        ? '← Go back to code version'
         : '← See an English friendly description'} */</span
     >
   </div>
 
   {#if showEnglishDescription}
-    <div class="flex">
+    <div class="flex items-start whitespace-normal">
       <Space />
-      <span>Hi! My name is Josh Fullmer and I'm a front-end developer.</span>
+      <span
+        ><Tab count={2} />Hi! My name is <span class="text-sky-400">Josh Fullmer</span> and I'm a front-end
+        developer. I love making apps with delightful user experiences. I also like to have fun along
+        the way!</span
+      >
+    </div>
+
+    <Space />
+
+    <div class="flex items-start whitespace-normal">
+      <Space />
+      <span
+        ><Tab count={2} />Professionally, I work primarily in
+        <span class="text-green-400">Vue</span> in the frontend, and in
+        <span class="text-purple-400">GraphQL/Express</span> in the backend. But you'll commonly
+        find me working on side projects in <span class="text-blue-400">React</span> and
+        <span class="text-red-400">Svelte</span>.</span
+      >
+    </div>
+
+    <Space />
+
+    <div class="flex items-start whitespace-normal">
+      <Space />
+      <span
+        ><Tab count={2} />Thanks for visiting my website. Please take a look at my
+        <a
+          href="/jobs"
+          class="underline underline-offset-4 decoration-sky-400 transition-colors duration-500 hover:text-sky-400"
+          >work experience</a
+        >,
+        <a
+          href="/skills"
+          class="underline underline-offset-4 decoration-sky-400 transition-colors duration-500 hover:text-sky-400"
+          >my skills</a
+        >, and
+        <a
+          href="/apps"
+          class="underline underline-offset-4 decoration-sky-400 transition-colors duration-500 hover:text-sky-400"
+          >a fun app or two</a
+        >.</span
+      >
     </div>
   {:else}
     <!-- const joshFullmer -->
-    <div class="flex">
+    <div class="flex items-start">
       <Space />
       <span class="text-gray-700">1</span>
       <Space count={2} />
@@ -170,7 +207,7 @@
 
     <!-- description -->
     {#if !isConstCollapsed}
-      <div class="flex">
+      <div class="flex items-start">
         <Space />
         <span class="text-gray-700">2</span>
         <Space count={4} />
@@ -188,7 +225,7 @@
         <span>,</span>
       </div>
 
-      <div class="flex">
+      <div class="flex items-start">
         <Space />
         <span class="text-gray-700">3</span>
         <Space count={2} />
@@ -222,8 +259,8 @@
 
       <!-- skills -->
       {#if !isSkillsCollapsed}
-        {#each skills as skill, i}
-          <div class="flex">
+        {#each joshFullmer.skills as skill, i}
+          <div class="flex items-start">
             <Space />
             <span class="text-gray-700">{4 + i}</span>
             <Space count={4} />
@@ -254,7 +291,7 @@
           </div>
         {/each}
 
-        <div class="flex">
+        <div class="flex items-start">
           <Space />
           <span class="text-gray-700">9</span>
           <Space count={4} />
@@ -264,7 +301,7 @@
         </div>
       {/if}
 
-      <div class="flex">
+      <div class="flex items-start">
         <span class="text-gray-700">10</span>
         <Space count={4} />
         <span class="text-lime-400">{'}'}</span>
