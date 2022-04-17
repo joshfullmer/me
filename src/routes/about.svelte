@@ -100,7 +100,7 @@
       </div>
     </div>
 
-    <h3 class="mb-4 text-sky-400">This site</h3>
+    <h3 class="mb-4 text-sky-400">joshfullmer.dev</h3>
 
     <div class="flex flex-col mb-20">
       <span class="mb-4">This site was lovingly built with:</span>
