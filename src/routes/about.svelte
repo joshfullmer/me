@@ -9,7 +9,7 @@
 </script>
 
 <div class="flex flex-col items-center mt-8 overflow-y-auto">
-  <h2 class="flex mb-8 text-2xl">
+  <h2 class="flex mb-8 text-2xl leading-loose">
     <Tooltip>
       <span slot="activator">joshFullmer</span>
 
