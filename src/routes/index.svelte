@@ -1,10 +1,7 @@
 <script lang="ts">
-  import GithubLink from '$lib/components/GithubLink.svelte';
-  import LinkedInLink from '$lib/components/LinkedInLink.svelte';
   import Space from '$lib/components/code/Space.svelte';
   import Tab from '$lib/components/code/Tab.svelte';
   import Tooltip from '$lib/components/shared/Tooltip.svelte';
-  import TwitterLink from '$lib/components/TwitterLink.svelte';
 
   type Skill = {
     /** Name of developer skill */
@@ -18,6 +15,8 @@
     description: string;
     /** List of skills and skill durations */
     skills: Skill[];
+    /** Returns summary of work experience and skills */
+    about: () => string;
   };
 
   const joshFullmer: Developer = {
@@ -28,7 +27,8 @@
       { name: 'Vue', years: 3 },
       { name: 'Typescript', years: 3 },
       { name: 'GraphQL', years: 3 }
-    ]
+    ],
+    about: () => 'Go to about.svelte'
   };
 
   let showEnglishDescription = false;
@@ -36,12 +36,6 @@
   let isSkillsCollapsed = false;
   let isHovered = false;
 </script>
-
-{#if false}
-  <TwitterLink />
-  <LinkedInLink />
-  <GithubLink />
-{/if}
 
 <div
   class="flex flex-col h-full mx-[10%] my-8 text-xl leading-loose md:text-2xl lg:text-3xl md:leading-loose lg:leading-loose whitespace-nowrap"
@@ -95,14 +89,9 @@
       <span
         ><Tab count={2} />Thanks for visiting my website. Please take a look at my
         <a
-          href="/jobs"
+          href="/about"
           class="underline underline-offset-4 decoration-sky-400 transition-colors duration-500 hover:text-sky-400"
-          >work experience</a
-        >,
-        <a
-          href="/skills"
-          class="underline underline-offset-4 decoration-sky-400 transition-colors duration-500 hover:text-sky-400"
-          >my skills</a
+          >skills, work experience</a
         >, and
         <a
           href="/apps"
@@ -177,6 +166,19 @@
             <Space />
             <span class="italic text-cyan-400">Skill</span>
             <span class="text-pink-400">[]</span>
+            <span>;</span>
+          </div>
+
+          <div class="flex">
+            <Tab />
+            <span class="italic text-blue-400">about</span>
+            <span class="italic text-cyan-400">:</span>
+            <Space />
+            <span>()</span>
+            <Space />
+            <span class="italic text-purple-400">=></span>
+            <Space />
+            <span class="text-yellow-400">string</span>
             <span>;</span>
           </div>
 
@@ -303,6 +305,40 @@
 
       <div class="flex items-start">
         <span class="text-gray-700">10</span>
+        <Space count={2} />
+        {#if isHovered}
+          <a href="/about" class="text-gray-400 hover:bg-gray-700">›</a>
+        {:else}
+          <Space />
+        {/if}
+        <Space />
+        <Tab />
+        <Tooltip>
+          <span slot="activator" class="text-blue-400 italic">about</span>
+          <div class="flex">
+            (property)<Space />about:<Space />()<Space /><span class="text-purple-400 italic"
+              >=></span
+            ><Space />string;
+          </div>
+          <svelte:fragment slot="description"
+            >Returns summary of work experience and skills</svelte:fragment
+          >
+        </Tooltip>
+        <span>:</span>
+        <Space />
+        <span class="text-pink-400">()</span>
+        <Space />
+        <span class="italic text-purple-400">=></span>
+        <Space />
+        <a href="/about" class="inline-flex hover:bg-gray-700">
+          <span class="text-pink-400">{'{'}</span>
+          <span class="text-red-400">...</span>
+          <span class="text-pink-400">{'}'}</span>
+        </a>
+      </div>
+
+      <div class="flex items-start">
+        <span class="text-gray-700">11</span>
         <Space count={4} />
         <span class="text-lime-400">{'}'}</span>
         <span>;</span>

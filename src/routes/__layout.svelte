@@ -10,6 +10,6 @@
 
 <Header />
 
-<main class="flex flex-col h-full">
+<main class="flex flex-col h-full overflow-hidden">
   <slot />
 </main>
