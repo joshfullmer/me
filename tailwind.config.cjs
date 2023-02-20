@@ -1,15 +1,15 @@
 const config = {
-  content: ['./src/**/*.{html,js,svelte,ts}'],
+	content: ['./src/**/*.{html,js,svelte,ts}'],
 
-  theme: {
-    extend: {
-      fontFamily: {
-        mono: ['Fira Code', 'monospace']
-      }
-    }
-  },
+	theme: {
+		extend: {
+			fontFamily: {
+				mono: ['Fira Code', 'monospace']
+			}
+		}
+	},
 
-  plugins: []
+	plugins: []
 };
 
 module.exports = config;

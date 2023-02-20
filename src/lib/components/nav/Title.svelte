@@ -1,6 +1,6 @@
 <h1>
-  <a href="/" class="flex">
-    <span class="text-gray-500 font-light">josh|</span>
-    <span class="text-sky-400 font-medium">FULLMER</span>
-  </a>
+	<a href="/" class="flex">
+		<span class="font-light text-gray-500">josh|</span>
+		<span class="font-medium text-sky-400">FULLMER</span>
+	</a>
 </h1>

@@ -1,7 +1,7 @@
 <script lang="ts">
-  import IconifyIcon from '@iconify/svelte';
+	import IconifyIcon from '@iconify/svelte';
 
-  export let icon = '';
+	export let icon = '';
 </script>
 
 <IconifyIcon class="h-6 w-6" {icon} />

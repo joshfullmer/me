@@ -1,7 +1,7 @@
 <script lang="ts">
-  export let href: string;
+	export let href: string;
 </script>
 
-<a {href} target="_blank" class="h-7 w-7 transition duration-350 text-sky-500 hover:text-current">
-  <slot />
+<a {href} target="_blank" rel="noreferrer" class="duration-350 h-7 w-7 text-sky-500 transition hover:text-current">
+	<slot />
 </a>
