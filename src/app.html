@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="description" content="Personal website of front-end developer Josh Fullmer" />
-		<link rel="icon" href="%svelte.assets%/favicon.png" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
 	</head>
@@ -11,6 +11,8 @@
 		data-sveltekit-preload-data="hover"
 		class="flex h-screen w-screen flex-col bg-gray-800 font-mono text-xl text-gray-300"
 	>
-		%sveltekit.body%
+    <div style="display: contents">
+      %sveltekit.body%
+    </div>
 	</body>
 </html>
