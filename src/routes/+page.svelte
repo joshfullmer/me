@@ -194,7 +194,7 @@
 						href="https://en.wikipedia.org/wiki/Web_developer"
 						target="_blank"
 						rel="noreferrer"
-						class="self-start text-blue-500 hover:underline underline-blue-500">See more...</a
+						class="underline-blue-500 self-start text-blue-500 hover:underline">See more...</a
 					>
 				</div>
 			</Tooltip>
@@ -312,9 +312,9 @@
 				<Space />
 				<Tab />
 				<Tooltip>
-					<span slot="activator" class="text-blue-400 italic">about</span>
+					<span slot="activator" class="italic text-blue-400">about</span>
 					<div class="flex">
-						(property)<Space />about:<Space />()<Space /><span class="text-purple-400 italic"
+						(property)<Space />about:<Space />()<Space /><span class="italic text-purple-400"
 							>=></span
 						><Space />string;
 					</div>
