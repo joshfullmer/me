@@ -4,7 +4,7 @@
 	<div class="flex justify-center">
 		<a
 			href="/apps/pokedex"
-			class="flex w-[300px] flex-col items-center gap-4 rounded-lg border border-sky-400 p-4"
+			class="flex w-[300px] flex-col items-center gap-4 rounded-lg border border-sky-400 p-4 hover:bg-sky-900"
 		>
 			<p class="text-2xl">Pokédex</p>
 
