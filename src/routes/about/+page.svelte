@@ -7,26 +7,34 @@
 	import TwitterLink from '$lib/components/TwitterLink.svelte';
 
 	let skills = [
-		{ skill: 'HTML', years: 6 },
-		{ skill: 'CSS', years: 6 },
-		{ skill: 'JavaScript', years: 6 },
+		{ skill: 'HTML', years: 8 },
+		{ skill: 'CSS', years: 8 },
+		{ skill: 'JavaScript', years: 8 },
 		{ skill: 'Vue', years: 3 },
-		{ skill: 'GraphQL', years: 3 },
-		{ skill: 'TypeScript', years: 4 },
+		{ skill: 'GraphQL', years: 4 },
+		{ skill: 'TypeScript', years: 6 },
 		{ skill: 'Express', years: 4 },
+		{ skill: 'NestJS', years: 1 },
 		{ skill: 'Firebase', years: 3 },
-		{ skill: 'React', years: 2 },
-		{ skill: 'TailwindCSS', years: 2 },
+		{ skill: 'React', years: 4 },
+		{ skill: 'TailwindCSS', years: 4 },
 		{ skill: 'Python', years: 2 }
 	] satisfies { skill: string; years: number }[];
 
 	let experience = [
 		{
 			title: 'Senior Software Engineer',
+			companyName: 'Endpoint Closing',
+			companyUrl: 'https://www.endpoint.com/',
+			startDate: new Date('2024-02-01T12:00:00.000Z'),
+			endDate: null
+		},
+		{
+			title: 'Senior Software Engineer',
 			companyName: 'Collectors',
 			companyUrl: 'collectors.com',
 			startDate: new Date('2022-05-01T12:00:00.000Z'),
-			endDate: undefined
+			endDate: new Date('2024-02-01T12:00:00.000Z')
 		},
 		{
 			title: 'Software Engineer III',
@@ -54,7 +62,7 @@
 		companyName: string;
 		companyUrl: string;
 		startDate: Date;
-		endDate: Date | undefined;
+		endDate: Date | null;
 	}[];
 
 	let siteTools = ['SvelteKit', 'TypeScript', 'TailwindCSS', 'Vite', 'pnpm', 'Vercel'];

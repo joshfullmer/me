@@ -22,12 +22,12 @@
 	const joshFullmer: Developer = {
 		description: 'User-focused frontend developer',
 		skills: [
-			{ name: 'React (with Next.js)', years: 2 },
-			{ name: 'Typescript', years: 4 },
-			{ name: 'TailwindCSS', years: 2 },
-			{ name: 'HTML/CSS', years: 6 },
+			{ name: 'React (with Next.js)', years: 4 },
+			{ name: 'Typescript', years: 6 },
+			{ name: 'TailwindCSS', years: 4 },
+			{ name: 'HTML/CSS', years: 8 },
 			{ name: 'Vue', years: 3 },
-			{ name: 'GraphQL', years: 3 }
+			{ name: 'GraphQL', years: 4 }
 		],
 		about: () => 'Go to /about'
 	};
@@ -76,12 +76,12 @@
 				<span class="text-blue-400">React</span> and <span class="text-blue-400">Next.js</span> in
 				the frontend, and in
 				<span class="text-purple-400">Typescript</span> and
-				<span class="text-purple-400">Express</span>
+				<span class="text-purple-400">NestJS</span>
 				in the backend. But you'll commonly find me working on side projects in
-				<span class="text-green-400">Vue</span>
-				(with <span class="text-green-400">Nuxt</span>) and
-				<span class="text-red-400">Svelte</span> (with
-				<span class="text-red-400">SvelteKit</span>).</span
+				<span class="text-red-400">Svelte</span>
+				(with <span class="text-red-400">SvelteKit</span>) and
+				<span class="text-green-400">Vue</span> (with
+				<span class="text-green-400">Nuxt</span>).</span
 			>
 		</div>
 
