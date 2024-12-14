@@ -107,7 +107,7 @@
 			<TwitterLink />
 			<div class="flex items-center">
 				<span class="text-gray-500">Download my</span><Space /><a
-					href="josh-fullmer-resume.pdf"
+					href="josh-fullmer-resume.docx"
 					download
 					class="inline-flex items-center gap-2 rounded px-3 py-2 text-sky-400 ring-2 ring-sky-800 hover:bg-gray-700 hover:text-gray-300 active:bg-gray-900"
 				>
